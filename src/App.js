@@ -1,26 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import jumboData from './fixtures/jambo.json';
+import { JumbotronContainer } from './containers/jumbotron';
+import { FooterContainer } from './containers/footer';
+import { FaqsContainer } from './containers/faqs';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <JumbotronContainer />
+    <FaqsContainer />
+    <FooterContainer />
+    </>
   );
 }
-
-export default App;
